@@ -1,0 +1,9 @@
+.iframe {
+  display: flex;
+  position: relative;
+}
+
+.frame {
+  display: flex;
+  margin: 1rem;
+}

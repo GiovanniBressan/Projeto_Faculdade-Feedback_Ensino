@@ -1,0 +1,83 @@
+* {
+  line-height: 1.5;
+  font-weight: 400;
+  animation-duration: 0.35s;
+  font-family: "Hind Siliguri", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.fundoBanner {
+  background-image: url("/public/fachada/fachada.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5 px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bannerLogo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  padding: 48px;
+  width: 40%;
+  margin-top: 140px;
+  margin-left: 120px;
+}
+
+.boxMain {
+  position: absolute;
+}
+
+.logoMain {
+  height: 12rem;
+}
+
+.boxText {
+  border-top-width: 1px;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-color: white;
+  font-size: 2.5rem;
+  color: white;
+  font-style: italic;
+  line-height: 3rem;
+}
+
+.boxTextSec {
+  font-size: 2rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .bannerLogo {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .boxText {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .boxTextSec {
+    font-size: 1.2rem;
+  }
+}

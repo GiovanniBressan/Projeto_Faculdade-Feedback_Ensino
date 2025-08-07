@@ -1,0 +1,128 @@
+.sectionBoxMain {
+  display: flex;
+  padding: 1rem;
+  height: 28rem;
+}
+
+.border {
+  display: flex;
+  padding: 2rem;
+  height: 23rem;
+  border-top-width: 1;
+  border-style: solid;
+  border-bottom-width: 1;
+  border-left-width: 1;
+  border-right-width: 1px;
+  border-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.quemSomos {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border-top-width: 0;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: rgb(68, 99, 241);
+}
+
+.text {
+  font-size: larger;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.sectionBoxMainSec {
+  display: flex;
+  padding: 1rem;
+  height: 30rem;
+}
+
+.boxSect {
+  display: flex;
+  height: 30rem;
+}
+
+.bercarioBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  padding: 0rem;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: rgb(68, 99, 241);
+  align-items: center;
+  padding: 0rem;
+  margin: 0;
+}
+
+.bercarioText {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  height: auto;
+  width: 70%;
+}
+
+.itemMain {
+  display: flex;
+  height: 22rem;
+  padding-right: 5rem;
+}
+
+.bercarioImg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .sectionBoxMain,
+  .sectionBoxMainSec {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .boxSect {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bercarioImg {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bercarioBox {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .bercarioText {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .itemMain {
+    padding: 1rem;
+    justify-content: center;
+  }
+}
