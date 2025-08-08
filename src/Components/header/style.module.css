@@ -5,28 +5,13 @@
   font-family: "Hind Siliguri", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    background: linear-gradient(180deg, #000e, transparent);
-  }
-}
-@media (max-width: 768px) {
-  .menu {
-    align-items: center;
-    padding: 1rem;
-  }
-  .logo-top {
-    height: 80px;
-  }
-  .lista-nav {
-    gap: 1rem;
-  }
-}
 .menu {
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  height: 120px;
+
   width: 100%;
   top: 0;
   left: 0;
@@ -35,11 +20,11 @@
 }
 
 .logo-top {
-  height: 120px;
   padding: 0.75rem;
 }
 .lista-nav {
   display: flex;
+  align-items: center;
   gap: 3rem;
   padding: 0;
   list-style: none;
@@ -47,7 +32,8 @@
   padding: 0;
 }
 
-.listagem {
+.listagem,
+.quemSomos {
   color: white;
   cursor: pointer;
   font-weight: 500;
@@ -57,6 +43,39 @@
   padding: 0;
 }
 
-.listagem:hover {
+.listagem:hover,
+.quemSomos:hover {
   color: #4596f1;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background: linear-gradient(180deg, #000e, transparent);
+  }
+  .menu {
+    align-items: center;
+    padding: 1rem;
+  }
+  .lista-nav {
+    display: flex;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .quemSomos {
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    list-style-type: none;
+    height: 30px;
+    padding: 0;
+    flex-direction: column;
+  }
+  .quemSomos:hover {
+    color: #4596f1;
+  }
+
+  .listagem {
+    display: flex;
+  }
 }
