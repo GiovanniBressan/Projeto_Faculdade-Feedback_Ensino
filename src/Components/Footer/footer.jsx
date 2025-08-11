@@ -1,7 +1,7 @@
 import Localização from "./googleMaps/googlemaps";
 import style from "./style.module.css";
-import facebook from "/public/Logo/facebook.svg";
-import instagram from "/public/Logo/instagram.svg";
+import facebook from "./redeSocial/facebook.svg";
+import instagram from "./redeSocial/instagram.svg";
 
 export default function Footer() {
   return (

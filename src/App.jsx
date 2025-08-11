@@ -2,7 +2,7 @@ import style from "./style.module.css";
 import Header from "./Components/header/header";
 import Main from "./Components/Text/text";
 import Footer from "./Components/Footer/footer";
-import logoMain from "/Logo/Logo-main.svg";
+import logoMain from "./assets/Logo/Logo-main.svg";
 
 function App() {
   return (

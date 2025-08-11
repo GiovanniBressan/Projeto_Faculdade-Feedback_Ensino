@@ -1,7 +1,7 @@
 import style from "./style.module.css";
-import bercarioImagem from "/public/bercario/berçario-1 1.svg";
-import maternalImagem from "/public/Maternal/maternal-1 .svg";
-import preEscolaimg from "/public/pre-escola/Pre-1 1.svg";
+import bercarioImagem from "./bercario/berçario-1 1.svg";
+import maternalImagem from "./Maternal/maternal-1 .svg";
+import preEscolaimg from "./Pre-escola/Pre-1 1.svg";
 
 export default function Main() {
   return (
