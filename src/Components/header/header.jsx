@@ -1,5 +1,4 @@
 import style from "./style.module.css";
-import logoTopo from "/public/Logo/logo.svg";
 
 export default function Header() {
   return (
