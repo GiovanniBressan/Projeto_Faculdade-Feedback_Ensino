@@ -1,7 +1,4 @@
 import style from "./style.module.css";
-import bercarioImagem from "/bercario/berçario-1 1.svg";
-import maternalImagem from "/Maternal/maternal-1 .svg";
-import preEscolaimg from "/Pre-escola/pre-1.svg";
 
 export default function Main() {
   return (
@@ -48,7 +45,7 @@ export default function Main() {
           </div>
           <div className={style.itemMain}>
             <img
-              src={bercarioImagem}
+              src={"/berçario-1_1.svg"}
               alt="bebês no berçário"
               className={style.bercarioImg}
             />
@@ -79,7 +76,7 @@ export default function Main() {
           </div>
           <div className={style.itemMain}>
             <img
-              src={maternalImagem}
+              src={"/maternal-1.svg"}
               alt="crianças maternal"
               className={style.bercarioImg}
             />
@@ -110,7 +107,7 @@ export default function Main() {
           </div>
           <div className={style.itemMain}>
             <img
-              src={preEscolaimg}
+              src={"/pre-1.svg"}
               alt="crianças"
               className={style.bercarioImg}
             />

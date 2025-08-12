@@ -1,7 +1,5 @@
 import Localização from "./googleMaps/googlemaps";
 import style from "./style.module.css";
-import facebook from "/redeSocial/facebook.svg";
-import instagram from "/redeSocial/instagram.svg";
 
 export default function Footer() {
   return (
@@ -24,7 +22,7 @@ export default function Footer() {
             <div className={style.socialMidia}>
               <a href="https://www.instagram.com/escolapassolivre/">
                 <img
-                  src={instagram}
+                  src={"/instagram.svg"}
                   alt="instagram"
                   className={style.socialMidia}
                 />
@@ -34,7 +32,7 @@ export default function Footer() {
                 target="_blank"
               >
                 <img
-                  src={facebook}
+                  src={"/facebook.svg"}
                   alt="Facebook"
                   target="_blank"
                   className={style.socialMidia}

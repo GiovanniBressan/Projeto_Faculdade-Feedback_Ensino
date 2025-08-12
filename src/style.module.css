@@ -17,7 +17,7 @@ html {
 }
 
 .fundoBanner {
-  background-image: url("/public/fachada/fachada.svg");
+  background-image: url("/fachada.svg");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
