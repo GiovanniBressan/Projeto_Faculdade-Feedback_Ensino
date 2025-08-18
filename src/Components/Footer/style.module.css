@@ -43,7 +43,7 @@
   height: 6rem;
   padding: 0.75rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .footerBox {
     flex-direction: column;
     height: auto;

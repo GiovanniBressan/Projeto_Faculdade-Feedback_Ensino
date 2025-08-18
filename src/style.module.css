@@ -57,7 +57,7 @@ body {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .fundoBanner {
     background-image: url("/fachada.svg");
     background-size: cover;
