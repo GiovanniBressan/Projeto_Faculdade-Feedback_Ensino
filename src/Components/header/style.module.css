@@ -48,18 +48,17 @@
   color: #4596f1;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    background: linear-gradient(180deg, #000e, transparent);
-  }
+@media (max-width: 768px) {
   .menu {
     align-items: center;
     padding: 1rem;
+    width: 91.5%;
+    height: auto;
   }
   .lista-nav {
     display: flex;
     padding: 1rem;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .quemSomos {
     color: white;

@@ -7,23 +7,15 @@
 
 body {
   margin: auto;
-  padding: auto;
-}
-
-body,
-html {
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 .fundoBanner {
   background-image: url("/fachada.svg");
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  position: relative;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -66,9 +58,22 @@ html {
 }
 
 @media (max-width: 768px) {
+  .fundoBanner {
+    background-image: url("/fachada.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .bannerLogo {
     margin-left: 0;
-    width: 100%;
+    width: auto;
     padding: 1rem;
   }
 

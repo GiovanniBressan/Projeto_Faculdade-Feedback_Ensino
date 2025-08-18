@@ -74,11 +74,12 @@ export default function Footer() {
       </div>
       <p
         style={{
-          backgroundColor: "rgb(68, 99, 241)",
+          backgroundColor: "rgb(80, 111, 255)",
           margin: 0,
           textAlign: "center",
           color: "white",
         }}
+        id="ano-atual"
       >
         Copyright © 2025 Passo Livre
       </p>
