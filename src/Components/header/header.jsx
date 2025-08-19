@@ -14,7 +14,7 @@ export default function Header() {
                 <li className={style.listagem}>Home</li>
               </a>
             </div>
-            <li className={style.quemSomos}>Quem Somos</li>
+            <li className={style.listagem}>Quem Somos</li>
             <li className={style.listagem}>Atividades</li>
             <li className={style.listagem}>Contatos</li>
           </ul>
