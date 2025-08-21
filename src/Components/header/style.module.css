@@ -6,14 +6,13 @@
 }
 
 .menu {
-  position: sticky; /* header fica “grudado” no topo sem pular layout */
+  display: flex;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 1rem 2rem;
-  background-color: rgba(80, 111, 255, 0.95); /* transparente no topo */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   justify-content: center;
+  background: rgb(120, 145, 255);
 }
 .logo-top {
   padding: 0.75rem;
@@ -29,13 +28,14 @@
 }
 
 .listagem {
+  align-items: center;
   color: white;
   cursor: pointer;
   font-weight: 500;
   transition: color 0.3s ease;
   list-style-type: none;
   height: 30px;
-  padding: 0;
+  padding: 1rem;
 }
 
 .listagem:hover {
@@ -45,14 +45,13 @@
 @media (max-width: 768px) {
   .menu {
     height: auto;
-    align-items: flex-start;
     padding: 0.5rem 1rem;
-    justify-content: flex-start;
     width: auto;
+    align-items: center;
   }
   .lista-nav {
     gap: 1rem;
-    align-items: flex-start;
+    justify-content: center;
   }
 
   .listagem {

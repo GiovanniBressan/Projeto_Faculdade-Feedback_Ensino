@@ -16,8 +16,8 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  align-items: center; /* novo → centraliza verticalmente */
-  justify-content: center; /* novo → centraliza horizontalmente */
+  align-items: center;
+  justify-content: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -25,9 +25,9 @@ body {
 
 .bannerLogo {
   display: flex;
-  flex-direction: column; /* novo → coloca logo + textos em coluna */
-  align-items: center; /* novo → centraliza */
-  text-align: center; /* novo → centraliza textos */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -36,8 +36,8 @@ body {
 }
 
 .logoMain {
-  max-width: 100%; /* novo → nunca passa da tela */
-  height: auto; /* novo → ajusta proporção */
+  max-width: 100%;
+  height: auto;
   max-height: 12rem;
 }
 
@@ -48,14 +48,14 @@ body {
   border-left-width: 0;
   border-right-width: 0;
   border-color: white;
-  font-size: clamp(1.5rem, 5vw, 3rem); /* modificado → usa tamanho fluido */
+  font-size: clamp(1.5rem, 5vw, 3rem);
   color: white;
   font-style: italic;
   line-height: 1.2;
 }
 
 .boxTextSec {
-  font-size: clamp(1.2rem, 4vw, 2.5rem); /* modificado → fluido */
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
   color: white;
 }
 

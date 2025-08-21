@@ -6,10 +6,10 @@
 
 .border {
   display: flex;
-  flex-direction: column; /* novo: garante que título + texto fiquem organizados */
+  flex-direction: column;
   padding: 2rem;
   height: auto;
-  border: 1px solid white; /* simplificado */
+  border: 1px solid white;
   box-shadow: 10px 10px 10px 5px rgba(90, 90, 90, 0.3);
   border-radius: 20px;
 }
@@ -38,7 +38,7 @@
 
 .boxSect {
   display: flex;
-  flex-wrap: wrap; /* novo: evita estourar */
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 }
@@ -48,13 +48,13 @@
   align-items: center;
   flex-direction: column;
   width: auto;
-  flex: 1 1 300px; /* novo: cresce ou encolhe conforme tela */
+  flex: 1 1 300px;
   text-align: center;
   padding: 1rem;
 }
 
 .titulo {
-  font-size: clamp(1.5rem, 3vw, 2.5rem); /* novo: tamanho fluido */
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: rgb(68, 99, 241);
   margin: 0 0 1rem 0;
 }
@@ -64,7 +64,7 @@
   align-items: center;
   height: auto;
   padding: 1rem;
-  width: 100%; /* modificado: antes 70% */
+  width: 100%;
   text-align: justify;
 }
 
