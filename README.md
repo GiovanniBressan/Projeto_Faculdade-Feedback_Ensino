@@ -1,12 +1,10 @@
-# React + Vite
+Instruções sobre o Projeto_Faculdade-Feedback_Ensino:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1) Baixar o pacote do repositorio em RAR.
+2) Vai selecionar a pasta do projeto no VS Code.
+3) Após isso, você jogará no ternimal cmd > cd server (que seria a pasta do servidor da API)
+4) Em seguida, no cmd escreverá > node server.js
+5) Ele criará um link para se rodar o servidor dos feedbacks gerados (duvida de como ver os comentarios, segue anexo video)
+6) Em seguida, escreverá no terminal cd .. (para estar voltando para a pasta raiz do projeto)
+7) Por fim, escreverá no terminal > npm run dev
+8) E ele estará gerando o front-end da ferramenta de feedback. Tem como ver tanto nos relatorios como no link da API via JSON
