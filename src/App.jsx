@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import Header from "./Components/header/header";
 import Main from "./Components/Text/menu";
 import FeedbackForm from "./Components/Feedback/FeedbackForm";
-import FeedbackList from "./Components/Feedback/FeedbackList"; // Importando o novo componente
+import FeedbackList from "./Components/Feedback/FeedbackList"; 
 
 function App() {
   return (
