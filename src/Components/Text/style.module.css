@@ -1,20 +1,18 @@
-/* src/Components/Text/style.module.css */
-
 .menuMain {
   padding: 2rem;
   background-color: rgba(189, 253, 38, 0.3);
-  display: flex; /* Usamos flexbox para centralizar o menuGrid */
+  display: flex; 
   align-items: center;
   justify-content: center;
   height: auto;
-  min-height: calc(100vh - 120px); /* Ajusta a altura para preencher a tela */
+  min-height: calc(100vh - 120px); 
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .menuGrid {
-  display: flex; /* Mudei para flexbox para um layout mais simples */
-  flex-direction: column; /* Coloca os itens em uma coluna */
+  display: flex; 
+  flex-direction: column; 
   gap: 1.5rem;
   max-width: 900px;
   width: 100%;
@@ -25,7 +23,7 @@
     149,
     125,
     173
-  ); /* Cor ajustada para combinar com a imagem */
+  ); 
   color: white;
   font-weight: bold;
   text-align: center;
@@ -33,7 +31,7 @@
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  text-decoration: none; /* Remove o sublinhado dos links */
+  text-decoration: none; 
 }
 
 .menuCard:hover {
