@@ -1,8 +1,7 @@
-// src/Components/FeedbackForm/FeedbackForm.jsx
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "./style.module.css"; // Vamos criar este arquivo de estilo
+import style from "./style.module.css"; 
 import axios from "axios";
 
 const FeedbackForm = ({ type }) => {
@@ -24,7 +23,7 @@ const FeedbackForm = ({ type }) => {
     };
 
     try {
-      // 1. Instale Axios: npm install axios
+      
       const response = await axios.post(
         "http://localhost:3001/api/feedback",
         feedbackData
