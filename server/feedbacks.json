@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1758827008180",
+    "category": "positivo",
+    "message": "aluno bom",
+    "from": "id_do_usuario_logado",
+    "role": "professor",
+    "to": "aluno",
+    "timestamp": "2025-09-25T19:03:28.021Z"
+  },
+  {
+    "id": "1758828791045",
+    "category": "positivo",
+    "message": "Professor esclareceu bem as duvidas sobre a matéria",
+    "from": "id_do_usuario_logado",
+    "role": "professor",
+    "to": "professor",
+    "timestamp": "2025-09-25T19:33:11.030Z"
+  }
+]

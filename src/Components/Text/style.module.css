@@ -1,175 +1,50 @@
-.sectionBoxMain {
-  display: flex;
-  padding: 1rem;
-  height: auto;
-}
+/* src/Components/Text/style.module.css */
 
-.border {
-  display: flex;
-  flex-direction: column;
+.menuMain {
   padding: 2rem;
+  background-color: rgba(189, 253, 38, 0.3);
+  display: flex; /* Usamos flexbox para centralizar o menuGrid */
+  align-items: center;
+  justify-content: center;
   height: auto;
-  border: 1px solid white;
-  box-shadow: 10px 10px 10px 5px rgba(90, 90, 90, 0.3);
-  border-radius: 20px;
+  min-height: calc(100vh - 120px); /* Ajusta a altura para preencher a tela */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.quemSomos {
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-  border-top-width: 0;
-  border-bottom: 2px solid rgb(68, 99, 241);
-  border-left-width: 0;
-}
-
-.text {
-  font-size: 1.2rem;
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-}
-
-.sectionBoxMainSec {
-  display: flex;
-  padding: 1rem;
-  height: auto;
-}
-
-.boxSect {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-}
-
-.bercarioBox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: auto;
-  flex: 1 1 300px;
-  text-align: center;
-  padding: 1rem;
-}
-
-.titulo {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  color: rgb(68, 99, 241);
-  margin: 0 0 1rem 0;
-}
-
-.bercarioText {
-  display: flex;
-  align-items: center;
-  height: auto;
-  padding: 1rem;
+.menuGrid {
+  display: flex; /* Mudei para flexbox para um layout mais simples */
+  flex-direction: column; /* Coloca os itens em uma coluna */
+  gap: 1.5rem;
+  max-width: 900px;
   width: 100%;
-  text-align: justify;
 }
 
-.itemMain {
-  display: flex;
-  height: 29rem;
-  padding-right: 5rem;
+.menuCard {
+  background-color: rgb(
+    149,
+    125,
+    173
+  ); /* Cor ajustada para combinar com a imagem */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none; /* Remove o sublinhado dos links */
 }
 
-.bercarioImg {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
-  max-width: 100%;
-  display: flex;
-  border-radius: 20px;
-  object-fit: cover;
+.menuCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
-  .sectionBoxMainSec {
-    flex-direction: column;
-  }
-  .sectionBoxMain {
-    display: flex;
-    padding: 1rem;
-    height: auto;
-  }
-
-  .border {
-    display: inline-grid;
-    height: auto;
-    padding: 2rem;
-    border-top-width: 1;
-    border-style: solid;
-    border-bottom-width: 1;
-    border-left-width: 1;
-    border-right-width: 1px;
-    border-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-  }
-
-  .quemSomos {
-    display: flex;
-    height: auto;
-    color: rgb(71, 103, 248);
-    align-items: center;
-    border-top-width: 0;
-    border-style: solid;
-    border-bottom-width: 2px;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-color: rgb(8, 27, 114);
-  }
-
-  .text {
-    padding: 1rem;
-    display: flex;
-    width: auto;
-  }
-
-  .boxSect {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .bercarioImg {
-    display: flex;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 100px;
-  }
-
-  .bercarioBox {
-    width: 100%;
-    text-align: start;
-    padding: 0rem;
-  }
-
-  .bercarioText {
-    padding: 1rem;
-    height: auto;
-    width: auto;
-    text-align: start;
-    word-spacing: 1px;
-    font-size: 1rem;
-  }
-
-  .itemMain {
-    height: 21rem;
-    padding: 1rem;
-    justify-content: center;
-  }
-  .text {
-    font-size: medium;
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-  }
-  .titulo {
-    font-size: 1.8rem;
-    text-align: center;
-  }
+.Copyright {
+  background-color: #08284d;
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
 }

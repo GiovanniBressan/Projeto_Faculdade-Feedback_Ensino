@@ -1,33 +1,32 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import style from "./style.module.css";
 import Header from "./Components/header/header";
-import Main from "./Components/Text/text";
-import Footer from "./Components/Footer/footer";
-import { sections } from "./Components/header/sections";
+import Main from "./Components/Text/menu";
+import FeedbackForm from "./Components/Feedback/FeedbackForm";
+import FeedbackList from "./Components/Feedback/FeedbackList"; // Importando o novo componente
 
 function App() {
   return (
-    <>
-      <div id={sections.home}>
-        <Header></Header>
-        <section className={style.fundoBanner}>
-          <div className={style.bannerLogo}>
-            <div className={style.boxMain}>
-              <img
-                src={"/logo-main.svg"}
-                alt="Logo"
-                className={style.logoMain}
-              />
-              <br />
-              <span className={style.boxText}>Livre para aprender,</span>
-              <br />
-              <span className={style.boxTextSec}>Livre para crescer</span>
-            </div>
-          </div>
-        </section>
+    <Router>
+      <div className={style.appContainer}>
+        <Header />
+        <Routes>
+          {/* Rota para a página inicial (o menu) */}
+          <Route path="/" element={<Main />} />
+          {/* Rotas para os formulários de feedback */}
+          <Route
+            path="/avaliar-aluno"
+            element={<FeedbackForm type="aluno" />}
+          />
+          <Route
+            path="/avaliar-professor"
+            element={<FeedbackForm type="professor" />}
+          />
+          {/* Rota para a lista de feedbacks recebidos */}
+          <Route path="/feedbacks-recebidos" element={<FeedbackList />} />
+        </Routes>
       </div>
-      <Main></Main>
-      <Footer></Footer>
-    </>
+    </Router>
   );
 }
 

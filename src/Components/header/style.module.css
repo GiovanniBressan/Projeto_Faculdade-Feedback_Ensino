@@ -5,14 +5,33 @@
   font-family: "Hind Siliguri", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.headerContainer {
+  background-color: #08284d;
+}
+
+.listaNav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 10;
   justify-content: center;
-  background: rgb(120, 145, 255);
+  flex-direction: column;
+  width: 100%;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: all 0.3s ease-in;
+}
+
+.menu.scrolled[data-v-3205db98] {
+  position: fixed;
+  background-color: #795904;
 }
 .logo-top {
   padding: 0.75rem;
@@ -25,37 +44,28 @@
   list-style: none;
   margin: 0;
   justify-content: center;
+  background-color: #08284d;
+  justify-content: space-between;
 }
 
 .listagem {
   align-items: center;
-  color: white;
   cursor: pointer;
   font-weight: 500;
   transition: color 0.3s ease;
   list-style-type: none;
-  height: 30px;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+.listagem1 {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  list-style-type: none;
+  padding: 0.5rem;
+  width: 55px; /* Defina a largura do quadrado */
+  height: 50px; /* Defina a altura do quadrado (igual à largura) */
+  border-radius: 50%; /* Transforma o quadrado em um círculo */
 }
 
 .listagem:hover {
-  color: #4596f1;
-}
-
-@media (max-width: 768px) {
-  .menu {
-    height: auto;
-    padding: 0.5rem 1rem;
-    width: auto;
-    align-items: center;
-  }
-  .lista-nav {
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .listagem {
-    display: flex;
-    padding: 0.5rem;
-  }
+  color: #da6709;
 }
