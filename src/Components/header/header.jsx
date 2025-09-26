@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className={style.headerContainer}>
       <div className={style.menu}>
-        {/* 3. SIMPLIFICAÇÃO: Usando classes CSS direto */}
+        
         <nav className={style.listaNav}>
           {/* Link para a página inicial (o menu) */}
           <Link to="/" className={style.logoLink}>
