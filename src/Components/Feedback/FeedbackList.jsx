@@ -1,8 +1,7 @@
-// src/Components/FeedbackList/FeedbackList.jsx
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import style from "./style.module.css"; // Criaremos este arquivo a seguir
+import style from "./style.module.css"; 
 
 const API_URL = "http://localhost:3001/api/feedbacks";
 
