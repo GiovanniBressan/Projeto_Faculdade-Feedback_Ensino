@@ -1,4 +1,3 @@
-// server/server.js (VERSÃO FINAL E COMPLETA)
 
 import express from "express";
 import cors from "cors";
@@ -9,11 +8,10 @@ import { fileURLToPath } from "url";
 // --- Definição do __dirname para ES Modules ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-// --- Fim da Definição ---
 
 const app = express();
 const PORT = 3001;
-// Usa o __dirname corrigido
+
 const FEEDBACKS_FILE = path.join(__dirname, "feedbacks.json");
 
 // --- Middleware ---
@@ -74,7 +72,7 @@ app.post("/api/feedback", (req, res) => {
   }
 });
 
-// --- NOVO: Rota GET para Listar os Feedbacks ---
+// --- Rota GET para Listar os Feedbacks ---
 app.get("/api/feedbacks", (req, res) => {
   try {
     const feedbacks = getFeedbacks();
@@ -83,7 +81,6 @@ app.get("/api/feedbacks", (req, res) => {
     res.status(500).json({ error: "Erro ao buscar feedbacks." });
   }
 });
-// --- Fim da nova Rota GET ---
 
 // --- Iniciar o Servidor ---
 
